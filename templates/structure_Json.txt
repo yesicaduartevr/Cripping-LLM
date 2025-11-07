@@ -1,1 +1,40 @@
+{
+  "$id": "https://example.com/cripchat.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Crip Experiment",
+  "type": "object",
+  "properties": {
+    "response": {
+      "type": "string",
+      "description": "MAX 3 SENTENCES. Ends with EXACTLY ONE reflective question. NO line breaks. NO markdown. NO multiple questions. Example: 'Access isn’t just ramps — it’s agreements. What’s a group you’ve seen get this right?"
+    },
+    "metadata": {
+      "type": "object",
+      "description": "Structural information about the interaction.",
+      "properties": {
+        "phase": {
+          "type": "string",
+          "enum": [
+            "A",
+            "B",
+            "C"
+          ],
+          "description": "Experiment phase (A: Comfort, B: Provocation, C: Glitch)."
+        },
+        "move": {
+          "type": "string",
+          "description": "Identifier of the move or question (e.g., Q1, Q2, S1B, glitch)."
+        }
+      },
+      "required": [
+        "phase",
+        "move"
+      ]
+    }
+  },
+  "required": [
+    "response",
+    "metadata"
+  ]
+}
 
