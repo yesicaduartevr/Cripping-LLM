@@ -38,9 +38,10 @@ Follow these steps to install **LM Studio**, download the **Qwen3 4B Instruct (2
 3. Find **Developer Mode** and toggle it **On**.
 
 > Why enable Developer Mode? It exposes advanced options useful for local API usage, debugging, and fine-grained configuration.
->![LM Studio Settings panel: Server Port 1234; CORS enabled; Permitir Conexiones de Red enabled; Just-in-Time Model Loading disabled.](assets/setting.png)
+>![LM Studio – Settings panel](assets/settings.png)
 
-
+4. Check the server settings with your ip number
+![LM Studio – Server settings](assets/server%20setting.png)
 
 ---
 
@@ -58,7 +59,7 @@ Match these values:
 - Leave **RoPE Frequency Base/Scale** unchecked (Auto)  
 - Keep others at defaults unless you know you need them.
 
-![LM Studio Load tab](assets/lmstudio-load.png "LM Studio • Load tab")
+![LM Studio – Load tab](assets/load%20tab.png)
 
 ### B) Inference tab (sampling & limits)
 Match these values:
@@ -70,8 +71,7 @@ Match these values:
 - **Top P Sampling:** `0.94`  
 - Leave **Structured Output** as shown (only enable when you need JSON).
 
-![LM Studio Inference tab with Temperature 0.4, Max response 512, TopK 70, Repeat Penalty 1.07, MinP 0.03, TopP 0.94.](assets/inference.png)
-![LM Studio load](assets/load.png)
+![LM Studio – Inference tab](assets/inference.png)
 ---
 
 ### C) Where to put the template prompt (System Prompt)
