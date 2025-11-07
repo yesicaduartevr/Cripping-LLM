@@ -38,6 +38,9 @@ Follow these steps to install **LM Studio**, download the **Qwen3 4B Instruct (2
 3. Find **Developer Mode** and toggle it **On**.
 
 > Why enable Developer Mode? It exposes advanced options useful for local API usage, debugging, and fine-grained configuration.
+>![LM Studio Settings panel: Server Port 1234; CORS enabled; Permitir Conexiones de Red enabled; Just-in-Time Model Loading disabled.](assets/screenshot.png "LM Studio Settings with CORS enabled")
+
+
 
 ---
 
