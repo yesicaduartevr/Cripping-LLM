@@ -44,8 +44,57 @@ Follow these steps to install **LM Studio**, download the **Qwen3 4B Instruct (2
 
 ---
 
-## 4) Model setting and template prompt
-On the right of the interface, there is a panel with tabs, imitate the same values that are in the pictures
+## 4) Model settings and template prompt
+
+On the right side of LM Studio, open the **panel with tabs** and set the values to match these screenshots.
+
+### A) Load tab (memory & performance)
+Match these values:
+- **Context Length:** `9096`  
+- **GPU Offload:** `36/36` (max for your GPU)  
+- **CPU Thread Pool Size:** `12`  
+- **Evaluation Batch Size:** `512`  
+- **Offload KV Cache to GPU Memory:** **On**  
+- Leave **RoPE Frequency Base/Scale** unchecked (Auto)  
+- Keep others at defaults unless you know you need them.
+
+![LM Studio Load tab with context length 9096, GPU offload 36/36, CPU thread pool size 12, eval batch size 512, Offload KV Cache ON; RoPE settings left on Auto.](assets/lmstudio-load.png "LM Studio • Load tab")
+
+### B) Inference tab (sampling & limits)
+Match these values:
+- **Temperature:** `0.4`  
+- **Limit Response Length:** **On**, **Max tokens:** `512`  
+- **Top K Sampling:** `70`  
+- **Repeat Penalty:** `1.07`  
+- **Min P Sampling:** `0.03`  
+- **Top P Sampling:** `0.94`  
+- Leave **Structured Output** as shown (only enable when you need JSON).
+
+![LM Studio Inference tab with Temperature 0.4, Max response 512, TopK 70, Repeat Penalty 1.07, MinP 0.03, TopP 0.94.](assets/lmstudio-inference.png "LM Studio • Inference tab")
+
+---
+
+### C) Where to put the template prompt (System Prompt)
+
+1. Go to the **Chat** view for your model.
+2. At the top of the chat panel, find the **System Prompt** (sometimes labeled **Instructions** or **System**).  
+   - It’s the text area **above** the message box, with placeholder text like *“Set behavior, style, or constraints…”*.
+3. **Paste your template prompt** there.  
+4. To keep both the **Inference** settings and your **System Prompt** together:
+   - Open the **Inference** tab (right panel).
+   - Click **Save As New…** next to **Preset** and give it a name (e.g., `Crip Q3 v4`).
+   - Next time, select this preset to restore your settings and system prompt.
+
+> If you don’t see a **System Prompt** box: click the small caret **˅** above the message input to expand it, or open **Chat Settings** (gear icon) and enable **Show System Prompt**.
+
+---
+
+### Troubleshooting images
+If the images don’t render on GitHub:
+- Make sure the files are in your repo at `assets/lmstudio-load.png` and `assets/lmstudio-inference.png`.
+- Filenames and paths are **case-sensitive**.
+- Use relative paths as shown above.
+
 
 
 ---
