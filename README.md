@@ -44,11 +44,9 @@ Follow these steps to install **LM Studio**, download the **Qwen3 4B Instruct (2
 
 ---
 
-## 4) Verify the Setup (Optional)
-- In LM Studio, open the **Chat** tab.
-- Select the **Qwen3 4B Instruct (2507)** model from the model picker.
-- Send a quick prompt like: `Hello!`  
-  If you get a response, the model is correctly installed.
+## 4) Model setting and template prompt
+On the right of the interface, there is a panel with tabs, imitate the same values that are in the pictures
+
 
 ---
 
